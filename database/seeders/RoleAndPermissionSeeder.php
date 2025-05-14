@@ -44,8 +44,8 @@ class RoleAndPermissionSeeder extends Seeder
         $superAdmin = Role::create(['name' => 'Super Admin']);
         $admin = Role::create(['name' => 'Admin']);
         $customer = Role::create(['name' => 'Customer']);
-        $finance = Role::create(['name' => 'Finance']);
-        $support = Role::create(['name' => 'Support']);
+        // $finance = Role::create(['name' => 'Finance']);
+        // $support = Role::create(['name' => 'Support']);
 
         $superAdmin->givePermissionTo([
             'manage customers',
